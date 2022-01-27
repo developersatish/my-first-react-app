@@ -15,7 +15,7 @@ function GitHub(props) {
         fetch(`https://api.github.com/users/${props.name}`)
             .then((re) => re.json())
             .then(setUser)
-            .then(setLoading(false))
+            .then(()=>setLoading(false))
             .catch(setError);
 
     }, [props.name]);
