@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Links() {
+export function NavigationLinks() {
     return (
         <nav>
             <Link to="/" >Home</Link> | 
@@ -11,5 +11,3 @@ function Links() {
         </nav>
     );
 }
-
-export default Links;

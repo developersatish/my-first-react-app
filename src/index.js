@@ -4,23 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import GitHub from './component/GitHub';
-import { BrowserRouter as Router } from 'react-router-dom'
-import Links from './component/links'
+import RouteHome from './component/routesPage';
+import DefaultReactPage from './component/defaultReactPage';
+
+
+// <DefaultReactPage />
+// <GitHub name="developersatish" />,
+// <RouteHome />,
+{/* <React.StrictMode>
+    <DefaultReactPage />
+  </React.StrictMode>,  */}
+
+
 
 ReactDOM.render(
-  <>
-
-    <Router>
-      <Links />
-      <App />
-    </Router>
-  </>
-
-  ,
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  // <GitHub name="developersatish" />,
+  <App />,
   document.getElementById('root')
 );
 

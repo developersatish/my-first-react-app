@@ -9,8 +9,8 @@ export function About() {
     return (
         <>
             <nav>
-                <Link to="service" >Service</Link> | 
-                <Link to="location" >Location</Link> | 
+                <Link to="service" >Service</Link> |
+                <Link to="location" >Location</Link> |
                 <Link to="history" >History</Link>
             </nav>
             <h1>[About]</h1>
