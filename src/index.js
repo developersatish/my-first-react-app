@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import GitHub from './component/GitHub';
 import RouteHome from './component/routesPage';
 import DefaultReactPage from './component/defaultReactPage';
-import HeaderMenu from './headerMenu'
+import HeaderMenu from './Header/headerMenu'
 
 // <DefaultReactPage />
 // <GitHub name="developersatish" />,
@@ -19,8 +19,10 @@ import HeaderMenu from './headerMenu'
 
 ReactDOM.render(
   <>
-    <HeaderMenu />
-    <App />
+    <div className="App container mx-auto mt-3 font-thin">
+      <RouteHome />
+    </div>
+
   </>
   ,
   document.getElementById('root')

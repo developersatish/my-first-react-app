@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import HeaderMenu from '../Header/headerMenu';
 
 export function NavigationLinks() {
     return (
         <nav>
-            <Link to="/" >Home</Link> | 
-            <Link to="about" >About</Link> |
-            <Link to="contact" >Contact</Link> |
-            <Link to="event" >Event</Link>
+             <HeaderMenu />           
         </nav>
     );
 }
