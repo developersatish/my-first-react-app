@@ -1,9 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Home, Event, ContactUs, About, NotFound, Service, Location, History } from './pages'
-import { NavigationLinks } from './links';
+import { Home, Event, ContactUs, About, NotFound, Service, Location, History } from '../component/pages'
+import { NavigationLinks } from '../Header/links';
 import AppointmentList from '../appointment/appointment-list';
-import GitHub from './GitHub';
+import GitHub from '../component/GitHub';
+import MqttConnect from '../mqtt/mqtt-connect';
 
 function RoutePage() {
   return (
@@ -18,7 +19,8 @@ function RoutePage() {
         <Route path="/event" element={<Event />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/appointment" element={<AppointmentList />} />
-        <Route path='/gitprofile' element={<GitHub />} />
+        <Route path='/gitprofile' element={<GitHub name="developersatish" />} />
+        <Route path='/mqtt' element={<MqttConnect />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

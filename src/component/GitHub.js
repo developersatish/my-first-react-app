@@ -8,14 +8,13 @@ function GitHub(props) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-
     useEffect(() => {
         if (!props.name) return;
         setLoading(true);
         fetch(`https://api.github.com/users/${props.name}`)
             .then((re) => re.json())
             .then(setUser)
-            .then(()=>setLoading(false))
+            .then(() => setLoading(false))
             .catch(setError);
 
     }, [props.name]);

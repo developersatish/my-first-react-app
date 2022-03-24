@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import GitHub from './component/GitHub';
-import RouteHome from './component/routesPage';
-import DefaultReactPage from './component/defaultReactPage';
-import HeaderMenu from './Header/headerMenu'
+import RouteHome from './core/routeHome';
 
 // <DefaultReactPage />
 // <GitHub name="developersatish" />,
